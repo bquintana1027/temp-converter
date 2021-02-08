@@ -8,9 +8,10 @@ public class TempConverter {
 
 	public static void main(String[] args) {
 	
+			  String mode = System.getProperty("mode");
+
 	for (int i = 0; i < args.length; i = i + 1) {
 		 
-		  String mode = System.getProperty("mode");
 		 
 		  if (mode != null && mode.equals("c2f")) {
 		  	float tempC = Float.parseFloat(args[i]);
